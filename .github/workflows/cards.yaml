@@ -24,7 +24,7 @@ jobs:
           token: ${{ secrets.PAT }}
 
       - name: Generate stats card dark
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&count_private=true&line_height=26&theme=dark
@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.PAT }}
 
       - name: Generate top languages card light
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&line_height=26
@@ -40,7 +40,7 @@ jobs:
           token: ${{ secrets.PAT }}
 
       - name: Generate top languages card dark
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&line_height=26&theme=dark
